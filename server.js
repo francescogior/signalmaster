@@ -4,7 +4,7 @@ var yetify = require('yetify'),
     uuid = require('node-uuid'),
     crypto = require('crypto'),
     port = parseInt(process.env.PORT || config.server.port, 10),
-    io = require('socket.io').listen(port);
+    io = require('socket.io').listen(8080);
 
 if (config.logLevel) {
     // https://github.com/Automattic/socket.io/wiki/Configuring-Socket.IO
